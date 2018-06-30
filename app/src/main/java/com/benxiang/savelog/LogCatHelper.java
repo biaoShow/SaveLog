@@ -71,7 +71,7 @@ public class LogCatHelper {
         public LogRunnable(int pid,String dirPath) {
             this.mPid = ""+pid;
             try {
-                File file = new File(dirPath,FormatDate.getFormatDate()+".log");
+                File file = new File(dirPath,"logcat.log");
                 if(!file.exists()){
                     file.createNewFile();
                 }
